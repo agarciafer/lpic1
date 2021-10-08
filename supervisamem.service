@@ -1,0 +1,11 @@
+[Unit]
+Description=Daemon of axample
+After=network.target
+
+[Service]
+ExecStart=/etc/init.d/iniciar-supervisamem start
+ExecStop=/etc/init.d/iniciar-supervisamem stop
+Type=forking
+
+[Install]
+WantedBy=multi-user.target
