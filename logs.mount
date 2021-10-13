@@ -1,0 +1,9 @@
+[Unit]
+Description=Mount System Backups Directory
+[Mount]
+What=/dev/sdb1
+Where=/logs
+Type=xfs
+Options=defaults
+[Install]
+WantedBy=multi-user.target
